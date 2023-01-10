@@ -106,4 +106,16 @@ sym.diff(sym.poly(x**2 + 2*x*y + 3) + sym.cos(x + 2*y), x)
 
 ![image](https://user-images.githubusercontent.com/44185037/211511870-26267158-92e8-4f69-b6ef-cf458ca18d92.png)
 
-위의 역삼각형 기호는 nabla라고 하며 gradient vector임을 나타내는 기호입니다. f`(x)대신 nabla를 사용하여 변수 x=(x1,x2,...,xd)를 동시에 update할 수 있습니다.
+* 위의 역삼각형 기호는 nabla라고 하며 gradient vector임을 나타내는 기호입니다. f`(x)대신 nabla를 사용하여 변수 x=(x1,x2,...,xd)를 동시에 update할 수 있습니다.
+
+* 아래와 같은 그래프에서는 임의의 점 하나를 찍어 보면 그 점에서 기울기 직선은 하나로 유일하게 결정되지 않는 경우가 발생합니다.
+
+![image](https://user-images.githubusercontent.com/44185037/211549090-389622f0-55b9-4b1a-a2a5-3622374f672f.png)
+
+출처 : https://angeloyeo.github.io/2019/08/25/gradient.html
+
+* 그래서 우리는 편미분이라는 개념이 필요합니다. 이러한 상황에서 수직인 두 방향으로만 기울기를 구하고 싶기 때문에 사용합니다.
+
+* 즉 f(x,y)의 x방향 만으로의 기울기와 y방향 만으로의 기울기는 각각 구할 수는 있기 때문에 y또는 x를 상수로 놓고 미분함으로써 x 방향만으로의 기울기와 y방향만으로의 기울기를 구할 수 있습니다.
+
+$\partial x \over $\partial$ f$
