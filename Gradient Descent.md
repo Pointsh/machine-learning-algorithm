@@ -113,7 +113,7 @@ sym.diff(sym.poly(x**2 + 2*x*y + 3) + sym.cos(x + 2*y), x)
 
 * 즉 f(x,y)의 x방향 만으로의 기울기와 y방향 만으로의 기울기는 각각 구할 수는 있기 때문에 y또는 x를 상수로 놓고 미분함으로써 x 방향만으로의 기울기와 y방향만으로의 기울기를 구할 수 있습니다.
 
-$f$의 x방향으로의 편미분은 다음과 같은 기호로 쓸 수 있습니다.$f_x$ 또는 $\partial x \over \partial f$
+$f$의 $x$ 방향으로의 편미분은 다음과 같은 기호로 쓸 수 있습니다. $f_x$ 또는 $\partial x \over \partial f$
 
 y의 경우에는 $f_y$ 또는 $\partial y \over \partial f$
 
