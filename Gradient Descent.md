@@ -115,7 +115,7 @@ sym.diff(sym.poly(x**2 + 2*x*y + 3) + sym.cos(x + 2*y), x)
 
 $f$의 $x$ 방향으로의 편미분은 다음과 같은 기호로 쓸 수 있습니다. $f_x$ 또는 $\partial x \over \partial f$
 
-y의 경우에는 $f_y$ 또는 $\partial y \over \partial f$
+$y$의 경우에는 $f_y$ 또는 $\partial y \over \partial f$
 
 * gradient vector는 변수 d개에 대해 각각 편미분 한 것을 한번에 표시합니다.
 
