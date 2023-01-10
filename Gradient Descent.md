@@ -63,6 +63,7 @@ sym.diff(sys.poly(x**2 + 2*x+3),x)
 * step size가 너무 작으면 발산하지는 않겠지만 최소값을 찾는데 너무 오래 걸릴 여지가 있으므로 적절한 step size를 찾아야합니다.
 
 ![image](https://user-images.githubusercontent.com/44185037/211530836-fbaa4966-84e6-4977-ae4e-182afea1b7fa.png)
+
 출처 : https://angeloyeo.github.io/2020/08/16/gradient_descent.html
 
 # Local minima
