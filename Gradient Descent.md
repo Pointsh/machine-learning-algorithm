@@ -121,4 +121,4 @@ y의 경우에는 $f_y$ 또는 $\partial y \over \partial f$
 
 ![image](https://user-images.githubusercontent.com/44185037/211511870-26267158-92e8-4f69-b6ef-cf458ca18d92.png)
 
-* 위의 역삼각형 기호는 nabla라고 하며 gradient vector임을 나타내는 기호입니다. f`(x)대신 nabla를 사용하여 변수 x=(x1,x2,...,xd)를 동시에 update할 수 있습니다.
+* 위의 역삼각형 기호는 nabla라고 하며 gradient vector임을 나타내는 기호입니다. f`(x)대신 nabla를 사용하여 변수 x=(x1,x2,…,xd)를 동시에 update할 수 있습니다.
