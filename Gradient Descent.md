@@ -52,8 +52,38 @@ sym.diff(sys.poly(x**2 + 2*x+3),x)
 
 * 미분 계수(=기울기=gradient)는 극소값에 가까워질 수록 값이 작아집니다. 따라서 이동거리에는 미분 계수와 비례하는 값을 이용한다. 그럼 극소값에서 멀 때는 많이 이동하고 극소값에 가까울 때는 조금씩 이동할 수 있습니다.
 
+* 이렇게해서 유도되는 최종 공식은 다음과 같습니다.
+
 * $x_i+1$ = $x_i$ - $\alpha$ $dx \over df$ $(x_i)$
 
+# Step Size(= $\alpha$ )
+
+* 적절한 step size선택은 매우 중요합니다. Step size가 큰 경우 이동 거리가 커지므로 빠르게 수렴할 수 있다는 장점이 있지만 최소값으로 수렴되지 못하고 함수값이 발산할 여지가 있습니다.
+
+* step size가 너무 작으면 발산하지는 않겠지만 최소값을 찾는데 너무 오래 걸릴 여지가 있으므로 적절한 step size를 찾아야합니다.
+
+![image](https://user-images.githubusercontent.com/44185037/211530836-fbaa4966-84e6-4977-ae4e-182afea1b7fa.png)
+출처 : https://angeloyeo.github.io/2020/08/16/gradient_descent.html
+
+# Local minima
+
+* Local minima 문제는 에러를 최소화시키는 최적의 파라미터를 찾는 문제에 있어서 아래 그림처럼 파라미터 공간에 수많은 지역적인 홀(hole)들이 존재하여 이러한 local minima에 빠질 경우 전역적인 해(global minimum)를 찾기 힘들게 되는 문제를 일컫습니다.
+
+![image](https://user-images.githubusercontent.com/44185037/211531730-d59ed642-6cda-4b3b-82b2-a45e52e2cfc0.png)
+
+
+![image](https://user-images.githubusercontent.com/44185037/211531151-c3f4bba4-0f1f-4667-9e49-23081595f9e5.png)
+출처 : https://angeloyeo.github.io/2020/08/16/gradient_descent.html
+
+* 하지만 최근에는 실제로 딥러닝이 수행될 때 local minima에 빠질 확률이 거의 없다고합니다.
+
+* 위의 그래프에서는 가중치(w)가 1개인 모델이지만 실제 딥러닝 모델에서는 w가 셀 수없이 많아서 그 수많은 w가 모두 local minima에 빠져야 w 업데이트가 정지됩니다.
+
+* 이론적으로는 거의 불가능에 가까운 일이므로, 사실상 local minima는 고려할 필요가 없는 것이 중론입니다.
+
+* 해당 내용은 https://darkpgmr.tistory.com/148 이곳에 자세히 서술되어있습니다.
+
+# 편미분 (partial differentiation)
 
 * 여기서 하나의 개념을 더짚고 넘어가야합니다. 그것은 바로 **편미분(partial differentiation)**
 
