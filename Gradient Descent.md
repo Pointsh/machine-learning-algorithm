@@ -73,6 +73,7 @@ sym.diff(sys.poly(x**2 + 2*x+3),x)
 
 
 ![image](https://user-images.githubusercontent.com/44185037/211531151-c3f4bba4-0f1f-4667-9e49-23081595f9e5.png)
+
 출처 : https://angeloyeo.github.io/2020/08/16/gradient_descent.html
 
 * 하지만 최근에는 실제로 딥러닝이 수행될 때 local minima에 빠질 확률이 거의 없다고합니다.
