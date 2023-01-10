@@ -102,11 +102,6 @@ sym.diff(sym.poly(x**2 + 2*x*y + 3) + sym.cos(x + 2*y), x)
 ```
 
 # gradient vector
-* gradient vector는 변수 d개에 대해 각각 편미분 한 것을 한번에 표시합니다.
-
-![image](https://user-images.githubusercontent.com/44185037/211511870-26267158-92e8-4f69-b6ef-cf458ca18d92.png)
-
-* 위의 역삼각형 기호는 nabla라고 하며 gradient vector임을 나타내는 기호입니다. f`(x)대신 nabla를 사용하여 변수 x=(x1,x2,...,xd)를 동시에 update할 수 있습니다.
 
 * 아래와 같은 그래프에서는 임의의 점 하나를 찍어 보면 그 점에서 기울기 직선은 하나로 유일하게 결정되지 않는 경우가 발생합니다.
 
@@ -118,4 +113,12 @@ sym.diff(sym.poly(x**2 + 2*x*y + 3) + sym.cos(x + 2*y), x)
 
 * 즉 f(x,y)의 x방향 만으로의 기울기와 y방향 만으로의 기울기는 각각 구할 수는 있기 때문에 y또는 x를 상수로 놓고 미분함으로써 x 방향만으로의 기울기와 y방향만으로의 기울기를 구할 수 있습니다.
 
-$\partial x \over $\partial$ f$
+$f$의 x방향으로의 편미분은 다음과 같은 기호로 쓸 수 있습니다.$f_x$ 또는 $\partial x \over \partial f$
+
+y의 경우에는 $f_y$ 또는 $\partial y \over \partial f$
+
+* gradient vector는 변수 d개에 대해 각각 편미분 한 것을 한번에 표시합니다.
+
+![image](https://user-images.githubusercontent.com/44185037/211511870-26267158-92e8-4f69-b6ef-cf458ca18d92.png)
+
+* 위의 역삼각형 기호는 nabla라고 하며 gradient vector임을 나타내는 기호입니다. f`(x)대신 nabla를 사용하여 변수 x=(x1,x2,...,xd)를 동시에 update할 수 있습니다.
